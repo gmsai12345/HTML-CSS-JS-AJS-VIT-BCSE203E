@@ -1,0 +1,21 @@
+<html>
+    <script>
+        function submitForm() {
+            var diameter = document.getElementById("diameter").value;
+            var price = document.getElementById("price").value;
+            document.getElementById("result1").innerHTML = diameter;
+            document.getElementById("result2").innerHTML = price;
+            // Prevent the form from submitting
+            return false;
+        }
+    </script>
+    <body>
+        <form onsubmit="return submitForm()">
+            <input type="text" id="diameter"/>
+            <input type="text" id="price"/>
+            <input type="submit"/>
+        </form>
+        <p id="result1"></p>
+        <p id="result2"></p>
+    </body>
+</html>

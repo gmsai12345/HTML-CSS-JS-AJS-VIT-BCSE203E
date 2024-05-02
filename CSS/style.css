@@ -1,0 +1,46 @@
+#cv
+{
+    font-size: 32px;
+    font-family: 'Times New Roman', Times, serif;
+    color: blue;
+}
+#contact
+{
+    border: 2px orange solid;
+    padding: 0px;
+}
+#label
+{
+    color: red;
+}
+#labeli
+{
+    color: black;
+}
+#color
+{
+    color: green;
+    font-size: 28px;
+}
+#div
+{
+    padding-left: 40px;
+}
+#contact1
+{
+    border: 2px orange solid;
+    padding-left: 20px;
+    padding-top: 0px;
+}
+#objective
+{
+    background-color: blue;
+}
+/* div {
+    width: 200px;
+    height: 100px;
+    padding: 20px;
+    border: 2px solid black;
+    margin: 10px;
+    box-sizing: border-box;
+} */

@@ -1,0 +1,29 @@
+<html>
+<body>
+<script>
+var s="wElCoMe";
+document.write("<p>Character at index 0 in the string "+s+" is :     "+s.charAt(0)+"</p>");
+document.write("<p>Character code at index 0 in the string "+s+" is :     "+s.charCodeAt(0)+"</p>");
+document.write("<p>"+s+"in lowercase is :   "+s.toLowerCase()+"</p>");
+document.write("<p>"+s+"in uppercase is :   "+s.toUpperCase()+"</p>");
+document.write("<p>From char code:     "+String.fromCharCode(72,69,76,76,79)+"</p>");
+var s1="Hello world";
+document.write("<p>substring(3):"+s1.substring(3)+"</p>");
+document.write("<p>substring(3,7):"+s1.substring(3,7)+"</p>");
+document.write("<p>substr(3):"+s1.substr(3)+"</p>");
+document.write("<p>substr(3,7):"+s1.substr(3,7)+"</p>");
+
+var s2="How are you doing today?"
+document.write("<p>"+s2.split(" ")+"</p>");
+document.write("<p>"+s2.split("")+"</p>");
+document.write("<p>"+s2.split(" ",3)+"</p>");
+
+var s3="hello how are you"
+document.write("<p>"+s3.indexOf('e')+"</p>");
+document.write("<p>"+s3.indexOf('o',5)+"</p>");
+document.write("<p>"+s3.indexOf('l')+"</p>");
+document.write("<p>"+s3.lastIndexOf('o',12)+"</p>");
+
+</script>
+</body>
+</html>

@@ -1,0 +1,15 @@
+<html>
+    <script>
+        function func()
+        {
+            var m = document.getElementById("mass").value;
+            var a = document.getElementById("acc").value;
+            document.write("The force is:" +m*a )
+        }
+    </script>
+    <form>
+        <input type="text" id="mass"/>
+        <input type="text" id="acc"/>
+        <input type="submit" onclick="func()"/>
+    </form>
+</html>

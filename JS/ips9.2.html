@@ -1,0 +1,18 @@
+<html>
+    <script>
+        function func()
+        {
+            var hours = document.getElementById("hours").value;
+            var rate = hours*45;
+            var cost = document.getElementById("cost").value;
+            var total = parseInt(rate+cost);
+            document.write("total"+total)
+            return false;
+        }
+    </script>
+    <form>
+        <input type="text" id="hours"/>
+        <input type="text" id="cost"/>
+        <input type="submit" onclick="func()"/>
+    </form>
+</html>

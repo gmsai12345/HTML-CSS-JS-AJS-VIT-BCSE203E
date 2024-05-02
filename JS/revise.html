@@ -1,0 +1,66 @@
+<html>
+    <script>
+        function fun()
+        {
+            var a = new Date();
+            a.getDay();
+            a.getTime();
+            document.writeln("<h2>Addition is: "+c+"</h2>");
+
+        }
+        function generateTable() 
+{
+var tbl = document.createElement("table");
+var tblBody = document.createElement("tbody");
+for(var i = 0; i < 2; i++) 
+{
+var row = document.createElement("tr");
+   for (var j = 0; j < 2; j++) 
+   {
+	var cell = document.createElement("td");
+      	var cellText = document.createTextNode("cell is row " + i + ", column " + j);
+     	cell.appendChild(cellText);
+      	row.appendChild(cell);
+    }
+   tblBody.appendChild(row);
+}
+tbl.appendChild(tblBody);
+document.body.appendChild(tbl);
+tbl.setAttribute("border", "2");
+tbl.setAttribute("cellspacing", "0");
+}
+function myFunction() {
+  /*var btn = document.createElement("button");
+  btn.innerHTML = "button1";
+  document.body.appendChild(btn);*/
+
+
+  var btn = document.createElement("button");
+  var t=document.createTextNode("button1");
+  btn.appendChild(t);
+  document.body.appendChild(btn);
+}
+function fun()
+{
+t=document.getElementById('t1').value;
+n=parseInt(t);
+var sum=0;
+while(n>0)
+{
+r=n%10;
+sum=sum+r;
+n=Math.floor(n/10);
+}
+document.writeln(sum);
+}
+    </script>
+        <fieldset>
+            <legend>Form</legend>
+            <div>
+                <label>Name :</label><input type="text" placeholder="input Name" />
+            </div>
+            <div>
+                <label>Password :</label><input type="text" placeholder="input Name" />
+            </div>
+        </fieldset>
+</html>

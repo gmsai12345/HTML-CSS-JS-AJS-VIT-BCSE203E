@@ -1,0 +1,24 @@
+<head>
+<script>
+function fun()
+{
+t=document.getElementById('t1').value;
+n=parseInt(t);
+var sum=0;
+while(n>0)
+{
+r=n%10;
+sum=sum+r;
+n=Math.floor(n/10);
+}
+document.writeln(sum);
+}
+</script>
+</head>
+<body>
+<input type="text" id=t1>
+<input type="button" onclick="fun()" value="button">
+</body>
+
+
+

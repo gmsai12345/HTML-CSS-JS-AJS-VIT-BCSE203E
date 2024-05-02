@@ -1,0 +1,22 @@
+<head>
+</head>
+<body>
+
+<form>
+    <input type="text" id="t1">
+    <input type="button" value="Focus" onclick="fun1()">
+    <input type="button" value="Reset" onclick="fun2()">
+</form>
+
+<script>
+function fun1() {
+    var inputElement = document.getElementById('t1').focus();
+    
+}
+function fun2() {
+    document.getElementById('t1').reset();
+}
+</script>
+
+</body>
+</html>

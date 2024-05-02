@@ -1,0 +1,23 @@
+<html>
+    <script>
+        function calculatePayment() {
+            var amount = parseFloat(prompt("Enter loan amount"));
+            var interest = parseFloat(prompt("Enter interest rate"));
+            var years = parseInt(prompt("Enter number of years"));
+
+            var monthlyInterestRate = interest / 100 / 12;
+            var numberOfPayments = years * 12;
+
+            var monthlyPayment = (amount * monthlyInterestRate) / (1 - Math.pow(1 + monthlyInterestRate, -numberOfPayments));
+            var yearlyPayment = monthlyPayment * 12;
+
+            alert("Yearly payment is: " + yearlyPayment.toFixed(2));
+        }
+        
+        function onLoadFunction() {
+            calculatePayment();
+        }
+    </script>
+    <body onload="calculatePayment()">
+    </body>
+</html>

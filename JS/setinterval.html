@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>setInterval Example</title>
+</head>
+<body>
+
+<div id="counter">0</div>
+
+<script>
+  // Function to increment the counter and update the display
+  function incrementCounter() {
+    var counterElement = document.getElementById('counter');
+    var currentCount = parseInt(counterElement.textContent);
+    counterElement.textContent = currentCount + 1;
+  }
+
+  // Call the incrementCounter function every 1 second (1000 milliseconds)
+  var intervalId = setInterval(incrementCounter, 1000);
+
+  // Stop the interval after 10 seconds (10000 milliseconds)
+  setTimeout(function() {
+    clearInterval(intervalId);
+    alert('Counter stopped after 10 seconds.');
+  }, 10000);
+</script>
+
+</body>
+</html>

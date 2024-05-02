@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>List Box Control</title>
+</head>
+<body>
+
+<select id="listBox" size="5">
+  <option value="option1">Option 1</option>
+  <option value="option2">Option 2</option>
+  <option value="option3">Option 3</option>
+  <option value="option4">Option 4</option>
+  <option value="option5">Option 5</option>
+</select>
+
+<button onclick="addItem()">Add Item</button>
+<button onclick="removeItem()">Remove Item</button>
+
+<script>
+  function addItem() {
+    var listBox = document.getElementById('listBox');
+    var newItem = document.createElement('option');
+    newItem.text = 'New Option';
+    newItem.value = 'newOption';
+    listBox.add(newItem);
+  }
+
+  function removeItem() {
+    var listBox = document.getElementById('listBox');
+    var selectedIndex = listBox.selectedIndex;
+    if (selectedIndex !== -1) {
+      listBox.remove(selectedIndex);
+    }
+  }
+</script>
+
+</body>
+</html>

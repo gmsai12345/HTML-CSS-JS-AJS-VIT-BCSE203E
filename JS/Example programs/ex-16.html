@@ -1,0 +1,23 @@
+<html>
+<body onload="myFunction()">
+<!---<p>Click the button to make a BUTTON element with text.</p>--->
+<!---<button onclick="myFunction()">Press it</button>--->
+<script>
+//Document Object Model (DOM)
+function myFunction() {
+  /*var btn = document.createElement("button");
+  btn.innerHTML = "button1";
+  document.body.appendChild(btn);*/
+
+
+  var btn = document.createElement("button");
+  var t=document.createTextNode("button1");
+  btn.appendChild(t);
+  document.body.appendChild(btn);
+  var btn1 = document.createElement("button")
+  btn.innerHTML="hellp";
+  document.body.appendChild(btn1)
+}
+</script>
+</body>
+</html>
